@@ -16,12 +16,12 @@ public class MovementScript : MonoBehaviour {
  
    private void FixedUpdate () {
         float x = Input.GetAxis ("Horizontal");
-        if (Input.GetKeyDown(KeyCode.Space)) {
-            RaycastHit2D hit = Physics2D.Raycast(rayOrigin.transform.position, Vector2.down, rayCheckDistance);
-            if (hit.collider.CompareTag("ground")||hit.collider.CompareTag("Player")) {
-                rb.AddForce (Vector2.up * jump, ForceMode2D.Impulse);
-            }
-        }
+//        if (Input.GetKeyDown(KeyCode.Space)) {
+//            RaycastHit2D hit = Physics2D.Raycast(rayOrigin.transform.position, Vector2.down, rayCheckDistance);
+//            if (hit.collider.CompareTag("ground")||hit.collider.CompareTag("Player")) {
+//                rb.AddForce (Vector2.up * jump, ForceMode2D.Impulse);
+//            }
+//        }
         rb.velocity = new Vector3 (x * speed, rb.velocity.y, 0);
 
         if (Input.GetKeyDown(KeyCode.S))
@@ -42,5 +42,12 @@ public class MovementScript : MonoBehaviour {
         }
  
     }
+
+  
+
+   public void Jumping()
+   {
+       rb.AddForce (Vector2.up * jump, ForceMode2D.Impulse);
+   }
 }
 
