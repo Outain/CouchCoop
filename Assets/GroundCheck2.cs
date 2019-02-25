@@ -7,16 +7,29 @@ public class GroundCheck2 : MonoBehaviour
     public MovementScriptPlayer2 ms;
 
     public MovementScript msSwing;
+    public float jumpCoolDown;
+    private float jumpCoolDownInitial;
+
+    public bool jumping;
     // Start is called before the first frame update
     void Start()
     {
+        jumpCoolDownInitial = jumpCoolDown;
         ms = GetComponentInParent<MovementScriptPlayer2>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (jumping)
+        {
+            jumpCoolDown += Time.deltaTime;
+        }
+
+        if (jumpCoolDown >= jumpCoolDownInitial)
+        {
+            jumping = false;
+        }
     }
     
     private void OnTriggerStay2D(Collider2D other)
@@ -24,10 +37,12 @@ public class GroundCheck2 : MonoBehaviour
         if (other.gameObject.CompareTag("ground")||other.gameObject.CompareTag("Player"))
         {
             ms.rb.velocity = new Vector3(ms.x * ms.speed, ms.rb.velocity.y, 0);
-            if (Input.GetKeyDown(KeyCode.UpArrow))
+            if (Input.GetKeyDown(KeyCode.UpArrow) && !jumping)
             {
 
                 ms.Jumping();
+                jumping = true;
+                jumpCoolDown = 0;
 
             } 
             

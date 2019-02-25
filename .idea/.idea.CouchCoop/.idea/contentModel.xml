@@ -11,6 +11,7 @@
         <e p="GroundCheck2.cs" t="Include" />
         <e p="MovementScript.cs" t="Include" />
         <e p="MovementScriptPlayer2.cs" t="Include" />
+        <e p="ObstacleDeath.cs" t="Include" />
         <e p="OpenDoor.cs" t="Include" />
         <e p="Parallax.cs" t="Include" />
         <e p="Scripts" t="Include">
