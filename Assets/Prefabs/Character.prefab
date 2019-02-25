@@ -462,8 +462,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2313e72e14984bb42903515bfd7c6ed7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  move: 97
-  anim: {fileID: 0}
+  Left: 97
+  Right: 100
 --- !u!1 &7836260922316960473
 GameObject:
   m_ObjectHideFlags: 0
