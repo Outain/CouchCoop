@@ -5,6 +5,8 @@ using UnityEngine;
 public class GroundCheck2 : MonoBehaviour
 {
     public MovementScriptPlayer2 ms;
+
+    public MovementScript msSwing;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,6 +33,7 @@ public class GroundCheck2 : MonoBehaviour
             
             if (Input.GetKey(KeyCode.DownArrow))
             {
+                msSwing.swinging = true;
                 ms.animScript.anchored = true;
                 ms.rb.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY|RigidbodyConstraints2D.FreezeRotation;
                 //rend.material.color = Color.red;
@@ -40,14 +43,24 @@ public class GroundCheck2 : MonoBehaviour
             }
             if (Input.GetKeyUp(KeyCode.DownArrow))
             {
-            
+                msSwing.swinging = false;
                 ms.rb.constraints = RigidbodyConstraints2D.FreezeRotation;
                 ms.animScript.anchored = false;
                 //rend.material.color = Color.white;
             }
+
+            ms.grounded = true;
         }
         
         
       
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("ground") || other.gameObject.CompareTag("Player"))
+        {
+            ms.grounded = false;
+        }
     }
 }

@@ -11,6 +11,9 @@ public class MovementScriptPlayer2 : MonoBehaviour
     public Rigidbody2D rb;
     public Renderer rend;
     public float x;
+    public bool grounded;
+    public float airForce;
+    public bool swinging;
     
     
     
@@ -28,7 +31,7 @@ public class MovementScriptPlayer2 : MonoBehaviour
 //                rb.AddForce (Vector2.up * jump, ForceMode2D.Impulse);
 //            }
 //        }
-        if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.LeftArrow)&&!swinging || Input.GetKey(KeyCode.RightArrow)&&!swinging)
         {
             rb.velocity = new Vector3(x * speed, rb.velocity.y, 0);
         }
@@ -36,7 +39,10 @@ public class MovementScriptPlayer2 : MonoBehaviour
         {
             rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y, 0);
         }
-//
+      if (Input.GetKey(KeyCode.LeftArrow)&&swinging || Input.GetKey(KeyCode.RightArrow)&&swinging)
+        {
+            rb.AddForce(Vector3.right*x*airForce);
+        }
 //        if (Input.GetKeyDown(KeyCode.S))
 //        {
 //            RaycastHit2D hit = Physics2D.Raycast(rayOrigin.transform.position, Vector2.down, rayCheckDistance);

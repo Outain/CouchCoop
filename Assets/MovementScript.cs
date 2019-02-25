@@ -10,6 +10,9 @@ public class MovementScript : MonoBehaviour {
     public Rigidbody2D rb;
     public Renderer rend;
     public float x;
+    public bool grounded;
+    public float airForce;
+    public bool swinging;
     
     public AnimParameters animScript;
  
@@ -18,20 +21,29 @@ public class MovementScript : MonoBehaviour {
     }
  
    private void FixedUpdate () {
+       
         x = Input.GetAxis ("Horizontal");
+        
 //        if (Input.GetKeyDown(KeyCode.Space)) {
 //            RaycastHit2D hit = Physics2D.Raycast(rayOrigin.transform.position, Vector2.down, rayCheckDistance);
 //            if (hit.collider.CompareTag("ground")||hit.collider.CompareTag("Player")) {
 //                rb.AddForce (Vector2.up * jump, ForceMode2D.Impulse);
 //            }
 //        }
-       if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
+       if (Input.GetKey(KeyCode.A)&&!swinging || Input.GetKey(KeyCode.D)&&!swinging)
        {
            rb.velocity = new Vector3(x * speed, rb.velocity.y, 0);
        }
+       
+       
        else
        {
            rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y, 0);
+       }
+       
+       if (Input.GetKey(KeyCode.A)&&swinging || Input.GetKey(KeyCode.D)&&swinging)
+       {
+           rb.AddForce(Vector2.right*x*airForce);
        }
 //
 //        if (Input.GetKeyDown(KeyCode.S))
@@ -61,6 +73,8 @@ public class MovementScript : MonoBehaviour {
             animScript.isJumping = false;
          }
     }
+   
+   
 
   
 
