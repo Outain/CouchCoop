@@ -2259,5 +2259,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4442518080968468076, guid: 2850de7439e88704e8bd980275955c9b,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4442518080968468076, guid: 2850de7439e88704e8bd980275955c9b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 4442518081671977341, guid: 2850de7439e88704e8bd980275955c9b,
+        type: 3}
+      propertyPath: doorOpenSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4442518081276893269, guid: 2850de7439e88704e8bd980275955c9b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 11.86
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2850de7439e88704e8bd980275955c9b, type: 3}
