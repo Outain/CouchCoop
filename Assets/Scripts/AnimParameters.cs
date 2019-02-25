@@ -9,8 +9,9 @@ public class AnimParameters : MonoBehaviour
     public KeyCode Right = KeyCode.D;
 
     Animator anim;
-
+    public bool isJumping;
     bool moving;
+    public bool anchored;
 
     void Start()
     {
@@ -31,6 +32,32 @@ public class AnimParameters : MonoBehaviour
         }
 
         anim.SetBool("Move", moving);
+        if (Input.GetKey(Left))
+        {
+            transform.localScale = new Vector3(-1,1,1);
+        }
+        if (Input.GetKey(Right))
+        {
+            transform.localScale = new Vector3(1,1,1);
+        }
+
+        if (isJumping)
+        {
+            anim.SetBool("Jump", true);
+        }
+        else
+        {
+            anim.SetBool("Jump", false);
+        }
+
+        if (anchored)
+        {
+            anim.SetBool("Anchor", true);
+        }
+        else
+        {
+            anim.SetBool("Anchor", false);
+        }
     }
 
 

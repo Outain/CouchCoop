@@ -9,6 +9,10 @@
         <e p="GroundCheck.cs" t="Include" />
         <e p="MovementScript.cs" t="Include" />
         <e p="OpenDoor.cs" t="Include" />
+        <e p="Parallax.cs" t="Include" />
+        <e p="Scripts" t="Include">
+          <e p="AnimParameters.cs" t="Include" />
+        </e>
       </e>
       <e p="CouchCoop.sln" t="IncludeFlat" />
       <e p="Library" t="ExcludeRecursive" />
