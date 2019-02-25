@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GroundCheck : MonoBehaviour
+public class GroundCheck2 : MonoBehaviour
 {
-    public MovementScript ms;
+    public MovementScriptPlayer2 ms;
     // Start is called before the first frame update
     void Start()
     {
-        ms = GetComponentInParent<MovementScript>();
+        ms = GetComponentInParent<MovementScriptPlayer2>();
     }
 
     // Update is called once per frame
@@ -22,14 +22,14 @@ public class GroundCheck : MonoBehaviour
         if (other.gameObject.CompareTag("ground")||other.gameObject.CompareTag("Player"))
         {
             ms.rb.velocity = new Vector3(ms.x * ms.speed, ms.rb.velocity.y, 0);
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.UpArrow))
             {
 
                 ms.Jumping();
 
             } 
             
-            if (Input.GetKey(KeyCode.S))
+            if (Input.GetKey(KeyCode.DownArrow))
             {
                 ms.animScript.anchored = true;
                 ms.rb.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY|RigidbodyConstraints2D.FreezeRotation;
@@ -38,7 +38,7 @@ public class GroundCheck : MonoBehaviour
            
 
             }
-            if (Input.GetKeyUp(KeyCode.S))
+            if (Input.GetKeyUp(KeyCode.DownArrow))
             {
             
                 ms.rb.constraints = RigidbodyConstraints2D.FreezeRotation;

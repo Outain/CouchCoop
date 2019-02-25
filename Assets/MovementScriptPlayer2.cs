@@ -1,8 +1,9 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
-public class MovementScript : MonoBehaviour {
-
+public class MovementScriptPlayer2 : MonoBehaviour
+{
     public float speed;
     public float jump;
     public GameObject rayOrigin;
@@ -11,28 +12,30 @@ public class MovementScript : MonoBehaviour {
     public Renderer rend;
     public float x;
     
+    
+    
     public AnimParameters animScript;
  
-   private void Start () {
+    private void Start () {
         rb = GetComponent <Rigidbody2D> ();
     }
  
-   private void FixedUpdate () {
-        x = Input.GetAxis ("Horizontal");
+    private void FixedUpdate () {
+        x = Input.GetAxis ("Horizontal2");
 //        if (Input.GetKeyDown(KeyCode.Space)) {
 //            RaycastHit2D hit = Physics2D.Raycast(rayOrigin.transform.position, Vector2.down, rayCheckDistance);
 //            if (hit.collider.CompareTag("ground")||hit.collider.CompareTag("Player")) {
 //                rb.AddForce (Vector2.up * jump, ForceMode2D.Impulse);
 //            }
 //        }
-       if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
-       {
-           rb.velocity = new Vector3(x * speed, rb.velocity.y, 0);
-       }
-       else
-       {
-           rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y, 0);
-       }
+        if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow))
+        {
+            rb.velocity = new Vector3(x * speed, rb.velocity.y, 0);
+        }
+        else
+        {
+            rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y, 0);
+        }
 //
 //        if (Input.GetKeyDown(KeyCode.S))
 //        {
@@ -52,21 +55,20 @@ public class MovementScript : MonoBehaviour {
 //            rend.material.color = Color.white;
 //        }
 
-         if (rb.velocity.y > 0.1f)
-         {
+        if (rb.velocity.y > 0.1f)
+        {
             animScript.isJumping = true;
-         }
-         else
-         {
+        }
+        else
+        {
             animScript.isJumping = false;
-         }
+        }
     }
 
   
 
-   public void Jumping()
-   {
-       rb.AddForce (Vector2.up * jump, ForceMode2D.Impulse);
-   }
+    public void Jumping()
+    {
+        rb.AddForce (Vector2.up * jump, ForceMode2D.Impulse);
+    }
 }
-

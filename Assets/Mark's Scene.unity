@@ -713,8 +713,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 419699569}
+  - component: {fileID: 419699570}
+  - component: {fileID: 419699571}
   m_Layer: 0
-  m_Name: ground check
+  m_Name: ground check 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -734,6 +736,45 @@ Transform:
   m_Father: {fileID: 1494481522}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &419699570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 419699568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5997887616e2f04985abd52d02bef02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ms: {fileID: 0}
+--- !u!61 &419699571
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 419699568}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0067643523, y: 0.029207706}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.0947014, y: 0.18397331}
+  m_EdgeRadius: 0
 --- !u!1001 &538387644
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1464,6 +1505,7 @@ GameObject:
   - component: {fileID: 1494481521}
   - component: {fileID: 1494481519}
   - component: {fileID: 1494481520}
+  - component: {fileID: 1494481523}
   m_Layer: 0
   m_Name: Player 2
   m_TagString: Player
@@ -1581,6 +1623,26 @@ Transform:
   m_Father: {fileID: 173355056}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1494481523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1494481518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 041385ee603f7cb459816bb08e853ef6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  jump: 10
+  rayOrigin: {fileID: 0}
+  rayCheckDistance: 0
+  rb: {fileID: 0}
+  rend: {fileID: 0}
+  x: 0
+  animScript: {fileID: 0}
 --- !u!1 &1605351995
 GameObject:
   m_ObjectHideFlags: 0
@@ -1887,6 +1949,7 @@ MonoBehaviour:
   rayCheckDistance: 0.1
   rb: {fileID: 0}
   rend: {fileID: 1876711204}
+  x: 0
   animScript: {fileID: 1270340358}
 --- !u!50 &1876711207
 Rigidbody2D:
