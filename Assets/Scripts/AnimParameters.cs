@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class AnimParameters : MonoBehaviour
 {
+    
+    public KeyCode Left = KeyCode.A;
+    public KeyCode Right = KeyCode.D;
 
-    public KeyCode move = KeyCode.A;
-    public Animator anim;
+    Animator anim;
 
     bool moving;
 
@@ -18,10 +20,12 @@ public class AnimParameters : MonoBehaviour
     
     void Update()
     {
-        if (Input.GetKey(move))
+       
+        if (Input.GetKey(Left) || Input.GetKey(Right))
         {
             moving = true;
-        } else
+        }
+        else
         {
             moving = false;
         }
