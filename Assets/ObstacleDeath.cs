@@ -2,21 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ObstacleDeath : MonoBehaviour {
+public class ObstacleDeath : MonoBehaviour
+{
+    public GameObject player;
+    public Transform startPos;
 
-    /*private void OnTriggerEnter2D(Collider2D coll)
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        if(coll.gameObject.tag == "Player")
+        if(collision.gameObject.tag == "Obstacle")
         {
-            Destroy(gameObject);
+            Debug.Log("Hit");
+            player.transform.position = startPos.transform.position;
         }
-    }*/
-
-    [SerializeField]private Transform player;
-    [SerializeField]private Transform respawnPoint;
-
-    private void OnTriggerEnter2D(Collider2D coll)
-    {
-        player.transform.position = respawnPoint.transform.position;
     }
 }
