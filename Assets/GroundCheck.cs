@@ -77,6 +77,9 @@ public class GroundCheck : MonoBehaviour
         if (other.gameObject.CompareTag("ground") || other.gameObject.CompareTag("Player"))
         {
             ms.grounded = false;
+            msSwing.swinging = false;
+            ms.rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+            ms.animScript.anchored = false;
         }
     }
 }
