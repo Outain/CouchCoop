@@ -4,15 +4,31 @@ using UnityEngine;
 
 public class ObstacleDeath : MonoBehaviour
 {
+    private GameObject originalPlayer;
     public GameObject player;
-    public Transform startPos;
+    public GameObject startPos;
+    private Vector3 spawnTransform;
 
+    void Start()
+    {
+        startPos = GameObject.FindWithTag("spawn");
+        print(startPos.transform.position);
+        spawnTransform = transform.position - startPos.transform.position;
+    }
+
+    void update()
+    {
+        spawnTransform = startPos.transform.position- transform.position;
+    }
     void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.tag == "Obstacle")
         {
             Debug.Log("Hit");
-            player.transform.position = startPos.transform.position;
+            //Instantiate(player, spawnTransform, Quaternion.identity);
+           player.transform.position = startPos.transform.position - transform.localPosition;
+            //Destroy(this.transform.parent.gameObject);
+            
         }
     }
 }
