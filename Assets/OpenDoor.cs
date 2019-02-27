@@ -9,6 +9,8 @@ public class OpenDoor : MonoBehaviour
     private bool _pressed;
     public Transform openDoorPos;
     public float doorOpenSpeed, switchOpenSpeed;
+    public bool destroyObject;
+    public GameObject objectToDestroy;
     
     private Vector2 _pressedSwitchTransform;
     // Start is called before the first frame update
@@ -25,6 +27,13 @@ public class OpenDoor : MonoBehaviour
         {
             transform.position = Vector2.Lerp(transform.position, _pressedSwitchTransform, switchOpenSpeed*Time.deltaTime);
             door.transform.position = Vector2.Lerp(door.transform.position, openDoorPos.position, doorOpenSpeed*Time.deltaTime);
+            if (destroyObject)
+            {
+                if (objectToDestroy != null)
+                {
+                    Destroy(objectToDestroy);
+                }
+            }
         }
     }
 
