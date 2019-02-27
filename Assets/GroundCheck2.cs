@@ -56,7 +56,7 @@ public class GroundCheck2 : MonoBehaviour
            
 
             }
-            if (Input.GetKeyUp(KeyCode.DownArrow))
+            else// (Input.GetKeyUp(KeyCode.DownArrow))
             {
                 msSwing.swinging = false;
                 ms.rb.constraints = RigidbodyConstraints2D.FreezeRotation;
@@ -76,6 +76,9 @@ public class GroundCheck2 : MonoBehaviour
         if (other.gameObject.CompareTag("ground") || other.gameObject.CompareTag("Player"))
         {
             ms.grounded = false;
+            msSwing.swinging = false;
+            ms.rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+            ms.animScript.anchored = false;
         }
     }
 }

@@ -8,6 +8,7 @@
       <e p="Assets" t="Include">
         <e p="CameraMovement.cs" t="Include" />
         <e p="CameraZoom.cs" t="Include" />
+        <e p="GameController.cs" t="Include" />
         <e p="GroundCheck.cs" t="Include" />
         <e p="GroundCheck2.cs" t="Include" />
         <e p="MovementScript.cs" t="Include" />
