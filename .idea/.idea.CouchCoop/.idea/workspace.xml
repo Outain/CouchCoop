@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c4c5393-bf6d-44f1-8cd7-c73a46ce7d3e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/CameraMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CameraMovement.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Mark's Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mark's Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Players and rope.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Players and rope.prefab" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -123,16 +123,32 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/CameraMovement.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="10" column="8" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+            <state relative-caret-position="280">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
               <folding>
-                <marker date="1551275384080" expanded="false" signature="6:78" ph="..." />
-                <marker date="1551275384080" expanded="true" signature="123:336" ph="{...}" />
-                <marker date="1551275384080" expanded="true" signature="234:255" ph="{...}" />
-                <marker date="1551275384080" expanded="true" signature="313:334" ph="{...}" />
+                <marker date="1551276228865" expanded="false" signature="6:78" ph="..." />
+                <marker date="1551276228865" expanded="true" signature="123:586" ph="{...}" />
+                <marker date="1551276228865" expanded="true" signature="300:321" ph="{...}" />
+                <marker date="1551276228865" expanded="true" signature="379:584" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/CameraZoom.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-60">
+              <folding>
+                <marker date="1551108938968" expanded="false" signature="6:78" ph="..." />
+                <marker date="1551108938968" expanded="true" signature="119:707" ph="{...}" />
+                <marker date="1551108938968" expanded="true" signature="245:705" ph="{...}" />
+                <marker date="1551108938968" expanded="true" signature="291:345" ph="{...}" />
+                <marker date="1551108938968" expanded="true" signature="367:525" ph="{...}" />
+                <marker date="1551108938968" expanded="true" signature="539:699" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -191,6 +207,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/GroundCheck2.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CameraZoom.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnimParameters.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ObstacleDeath.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/MovementScriptPlayer2.cs" root0="FORCE_HIGHLIGHTING" />
@@ -282,12 +299,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1550929740143</updated>
-      <workItem from="1550929751011" duration="24127000" />
+      <workItem from="1550929751011" duration="25756000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24127000" />
+    <option name="totallyTimeSpent" value="25756000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -487,13 +504,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/CameraMovement.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="10" column="8" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+        <state relative-caret-position="280">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
           <folding>
-            <marker date="1551275384080" expanded="false" signature="6:78" ph="..." />
-            <marker date="1551275384080" expanded="true" signature="123:336" ph="{...}" />
-            <marker date="1551275384080" expanded="true" signature="234:255" ph="{...}" />
-            <marker date="1551275384080" expanded="true" signature="313:334" ph="{...}" />
+            <marker date="1551276228865" expanded="false" signature="6:78" ph="..." />
+            <marker date="1551276228865" expanded="true" signature="123:586" ph="{...}" />
+            <marker date="1551276228865" expanded="true" signature="300:321" ph="{...}" />
+            <marker date="1551276228865" expanded="true" signature="379:584" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/CameraZoom.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-60">
+          <folding>
+            <marker date="1551108938968" expanded="false" signature="6:78" ph="..." />
+            <marker date="1551108938968" expanded="true" signature="119:707" ph="{...}" />
+            <marker date="1551108938968" expanded="true" signature="245:705" ph="{...}" />
+            <marker date="1551108938968" expanded="true" signature="291:345" ph="{...}" />
+            <marker date="1551108938968" expanded="true" signature="367:525" ph="{...}" />
+            <marker date="1551108938968" expanded="true" signature="539:699" ph="{...}" />
           </folding>
         </state>
       </provider>

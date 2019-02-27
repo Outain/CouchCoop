@@ -423,6 +423,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &893061061 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1747601604312712146, guid: dc6480a4096760640867932d5a852878,
+    type: 3}
+  m_PrefabInstance: {fileID: 1747601603623762336}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &945351832
 GameObject:
   m_ObjectHideFlags: 0
@@ -646,6 +652,8 @@ GameObject:
   - component: {fileID: 1605351998}
   - component: {fileID: 1605351997}
   - component: {fileID: 1605351996}
+  - component: {fileID: 1605352000}
+  - component: {fileID: 1605351999}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -717,6 +725,39 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1605351999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1605351995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3012d8953dedb7747b83d6d68f7b7a17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1605352000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1605351995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fc12c2cef0c4b74198a55c829bdcb80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player1: {fileID: 1866149778}
+  player2: {fileID: 893061061}
+  halfWayPoint: {x: 0, y: 0, z: 0}
+--- !u!4 &1866149778 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1747601604132597381, guid: dc6480a4096760640867932d5a852878,
+    type: 3}
+  m_PrefabInstance: {fileID: 1747601603623762336}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2116955832
 GameObject:
   m_ObjectHideFlags: 0
