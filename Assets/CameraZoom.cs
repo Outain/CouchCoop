@@ -5,7 +5,7 @@ using UnityEngine;
 public class CameraZoom : MonoBehaviour
 {
     int zoom = 20;
-    int normal = 5;
+    int normal = 7;
     float smooth = 5;
 
     private bool isZoomed = false;
