@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 712161083}
   - component: {fileID: 712161082}
   - component: {fileID: 712161081}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ropelink (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 712161079}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.169872, y: 0.40147552, z: 0}
+  m_LocalPosition: {x: 4.169872, y: 0.40147552, z: 10}
   m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_Children: []
   m_Father: {fileID: 1747601603519613328}
@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 1705177226}
   - component: {fileID: 1705177225}
   - component: {fileID: 1705177224}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ropelink (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -148,7 +148,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1705177222}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.669872, y: 0.40147552, z: 0}
+  m_LocalPosition: {x: 3.669872, y: 0.40147552, z: 10}
   m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_Children: []
   m_Father: {fileID: 1747601603519613328}
@@ -240,7 +240,7 @@ DistanceJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 1
-  m_Distance: 0.49999952
+  m_Distance: 0.5
   m_MaxDistanceOnly: 0
 --- !u!1 &1763086096
 GameObject:
@@ -321,7 +321,7 @@ GameObject:
   - component: {fileID: 1747601602979097645}
   - component: {fileID: 1747601602979097644}
   - component: {fileID: 1747601602979097643}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ropelink (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -336,7 +336,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1747601602979097642}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.1698723, y: 0.40147552, z: 0}
+  m_LocalPosition: {x: 3.1698723, y: 0.40147552, z: 10}
   m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_Children: []
   m_Father: {fileID: 1747601603519613328}
@@ -428,7 +428,7 @@ DistanceJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 1
-  m_Distance: 0.49999952
+  m_Distance: 0.5
   m_MaxDistanceOnly: 0
 --- !u!1 &1747601603052234693
 GameObject:
@@ -442,7 +442,7 @@ GameObject:
   - component: {fileID: 1747601603052234696}
   - component: {fileID: 1747601603052234695}
   - component: {fileID: 1747601603052234694}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ropelink (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -457,7 +457,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1747601603052234693}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.6698723, y: 0.40147552, z: 0}
+  m_LocalPosition: {x: 2.6698723, y: 0.40147552, z: 10}
   m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_Children: []
   m_Father: {fileID: 1747601603519613328}
@@ -563,7 +563,7 @@ GameObject:
   - component: {fileID: 1747601603219175225}
   - component: {fileID: 1747601603219175224}
   - component: {fileID: 1747601603219175223}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ropelink (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -578,7 +578,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1747601603219175222}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.1698723, y: 0.40147552, z: 0}
+  m_LocalPosition: {x: 1.1698723, y: 0.40147552, z: 10}
   m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_Children: []
   m_Father: {fileID: 1747601603519613328}
@@ -670,7 +670,7 @@ DistanceJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0}
   m_AutoConfigureDistance: 1
-  m_Distance: 0.50000024
+  m_Distance: 0.5
   m_MaxDistanceOnly: 0
 --- !u!1 &1747601603237618384
 GameObject:
@@ -758,7 +758,7 @@ GameObject:
   - component: {fileID: 1747601603386495399}
   - component: {fileID: 1747601603386495397}
   - component: {fileID: 1747601603386495398}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ropelink
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -773,7 +773,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1747601603386495396}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.16987234, y: 0.40147552, z: 0}
+  m_LocalPosition: {x: 0.16987234, y: 0.40147552, z: 10}
   m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_Children: []
   m_Father: {fileID: 1747601603519613328}
@@ -879,7 +879,7 @@ GameObject:
   - component: {fileID: 1747601603405068010}
   - component: {fileID: 1747601603405068009}
   - component: {fileID: 1747601603405068008}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ropelink (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -894,7 +894,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1747601603405068007}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.6698723, y: 0.40147552, z: 0}
+  m_LocalPosition: {x: 1.6698723, y: 0.40147552, z: 10}
   m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_Children: []
   m_Father: {fileID: 1747601603519613328}
@@ -1000,7 +1000,7 @@ GameObject:
   - component: {fileID: 1747601603493899750}
   - component: {fileID: 1747601603493899749}
   - component: {fileID: 1747601603493899748}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ropelink (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1015,7 +1015,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1747601603493899747}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.66987234, y: 0.40147552, z: 0}
+  m_LocalPosition: {x: 0.66987234, y: 0.40147552, z: 10}
   m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_Children: []
   m_Father: {fileID: 1747601603519613328}
@@ -1270,7 +1270,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  jump: 10
+  jump: 12
   rayOrigin: {fileID: 1747601604288929527}
   rayCheckDistance: 0.1
   rb: {fileID: 0}
@@ -1351,7 +1351,7 @@ GameObject:
   - component: {fileID: 1747601604272538186}
   - component: {fileID: 1747601604272538185}
   - component: {fileID: 1747601604272538184}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ropelink (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1366,7 +1366,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1747601604272538183}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.1698723, y: 0.40147552, z: 0}
+  m_LocalPosition: {x: 2.1698723, y: 0.40147552, z: 10}
   m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_Children: []
   m_Father: {fileID: 1747601603519613328}
@@ -1678,7 +1678,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  jump: 10
+  jump: 12
   rayOrigin: {fileID: 0}
   rayCheckDistance: 0
   rb: {fileID: 0}

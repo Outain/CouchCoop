@@ -57,7 +57,7 @@ public class GroundCheck : MonoBehaviour
            
 
             }
-            if (Input.GetKeyUp(KeyCode.S))
+           else //(Input.GetKeyUp(KeyCode.S))
             {
                 msSwing.swinging = false;
                 ms.rb.constraints = RigidbodyConstraints2D.FreezeRotation;
