@@ -50,7 +50,7 @@ public class GroundCheck2 : MonoBehaviour
             {
                 msSwing.swinging = true;
                 ms.animScript.anchored = true;
-                ms.rb.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY|RigidbodyConstraints2D.FreezeRotation;
+                ms.rb.constraints = RigidbodyConstraints2D.FreezePositionX |RigidbodyConstraints2D.FreezeRotation;
                 //rend.material.color = Color.red;
             
            
