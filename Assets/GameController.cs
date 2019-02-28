@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
-    //public List<OpenDoor> doorList = new List<OpenDoor>();
+   private OpenDoor[] doorScripts;
     // Start is called before the first frame update
     void Start()
     {
-        
+       doorScripts = FindObjectsOfType(typeof(OpenDoor)) as OpenDoor[];
     }
 
     // Update is called once per frame
@@ -16,6 +16,13 @@ public class GameController : MonoBehaviour
     {
         
     }
-    
+
+    public void ResetAllDoors()
+    {
+        for (int i = 0; i < doorScripts.Length; i++)
+        {
+            doorScripts[i].ResetPosition();
+        }
+    }
     
 }

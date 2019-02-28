@@ -8,7 +8,7 @@ public class ObstacleDeath : MonoBehaviour
     public GameObject player;
     public GameObject startPos;
     private Vector3 spawnTransform;
-
+    public GameController gcScript;
     void Start()
     {
         startPos = GameObject.FindWithTag("spawn");
@@ -28,6 +28,7 @@ public class ObstacleDeath : MonoBehaviour
             //Instantiate(player, spawnTransform, Quaternion.identity);
            player.transform.position = startPos.transform.position - transform.localPosition;
             //Destroy(this.transform.parent.gameObject);
+            gcScript.ResetAllDoors();
             
         }
     }

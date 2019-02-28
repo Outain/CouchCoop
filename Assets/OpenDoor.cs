@@ -6,14 +6,14 @@ using UnityEngine;
 public class OpenDoor : MonoBehaviour
 {
     public GameObject door;
-    public bool _pressed;
+    public bool _pressed,_reset;
     public Transform openDoorPos;
     public float doorOpenSpeed, switchOpenSpeed;
     public bool destroyObject;
     public GameObject objectToDestroy;
     
     
-    private Vector2 _pressedSwitchTransform,_originalSwitchTransform;
+    private Vector2 _pressedSwitchTransform,_originalSwitchTransform,_originalDoorTransform;
 
     public bool linkedSwitch;
 
@@ -24,6 +24,7 @@ public class OpenDoor : MonoBehaviour
         _originalSwitchTransform = transform.position;
         _pressed = false;
         _pressedSwitchTransform = new Vector2(transform.position.x, transform.position.y-0.2f);
+        _originalDoorTransform = door.transform.position;
     }
 
     // Update is called once per frame
@@ -48,12 +49,19 @@ public class OpenDoor : MonoBehaviour
         {
             transform.position = Vector2.Lerp(transform.position, _originalSwitchTransform, switchOpenSpeed*Time.deltaTime);
         }
+        
+        if (_reset)
+        {
+            door.transform.position = Vector2.MoveTowards(door.transform.position, _originalDoorTransform, doorOpenSpeed*10*Time.deltaTime);
+
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            _reset = false;
             _pressed = true;
             if (linkedSwitch)
             {
@@ -65,9 +73,10 @@ public class OpenDoor : MonoBehaviour
         }
     }
 
-    public void Pressed()
+    public void ResetPosition()
     {
-        
+        _pressed = false;
+        _reset = true;
     }
     
    
