@@ -11,7 +11,7 @@ public class ObstacleDeath : MonoBehaviour
     public GameController gcScript;
     void Start()
     {
-        startPos = GameObject.FindWithTag("spawn");
+       // startPos = GameObject.FindWithTag("spawn");
         print(startPos.transform.position);
         spawnTransform = transform.position - startPos.transform.position;
     }

@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c4c5393-bf6d-44f1-8cd7-c73a46ce7d3e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CouchCoop/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CouchCoop/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CouchCoop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CouchCoop/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Mark's Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mark's Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ObstacleDeath.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ObstacleDeath.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Level Chunks/ConnorArea.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Level Chunks/ConnorArea.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Level Chunks/First Switch.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Level Chunks/First Switch.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Level Chunks/Switch time.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Level Chunks/Switch time.prefab" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -128,18 +124,18 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/ObstacleDeath.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+            <state relative-caret-position="220">
+              <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
               <folding>
-                <marker date="1551388696210" expanded="false" signature="6:78" ph="..." />
-                <marker date="1551388696210" expanded="true" signature="122:1042" ph="{...}" />
-                <marker date="1551388696210" expanded="true" signature="314:497" ph="{...}" />
-                <marker date="1551388696210" expanded="true" signature="516:602" ph="{...}" />
-                <marker date="1551388696210" expanded="true" signature="653:1040" ph="{...}" />
-                <marker date="1551388696210" expanded="true" signature="710:1034" ph="{...}" />
+                <marker date="1551395595499" expanded="false" signature="6:78" ph="..." />
+                <marker date="1551395595499" expanded="true" signature="122:1044" ph="{...}" />
+                <marker date="1551395595499" expanded="true" signature="314:499" ph="{...}" />
+                <marker date="1551395595499" expanded="true" signature="518:604" ph="{...}" />
+                <marker date="1551395595499" expanded="true" signature="655:1042" ph="{...}" />
+                <marker date="1551395595499" expanded="true" signature="712:1036" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -193,7 +189,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/SpawnPointSwitcher.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="292">
@@ -262,10 +258,10 @@
         <option value="$PROJECT_DIR$/Assets/GroundCheck.cs" />
         <option value="$PROJECT_DIR$/Assets/GroundCheck2.cs" />
         <option value="$PROJECT_DIR$/Assets/EndScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/ObstacleDeath.cs" />
         <option value="$PROJECT_DIR$/Assets/GameController.cs" />
         <option value="$PROJECT_DIR$/Assets/OpenDoor.cs" />
         <option value="$PROJECT_DIR$/Assets/SpawnPointSwitcher.cs" />
+        <option value="$PROJECT_DIR$/Assets/ObstacleDeath.cs" />
       </list>
     </option>
   </component>
@@ -338,12 +334,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1550929740143</updated>
-      <workItem from="1550929751011" duration="37545000" />
+      <workItem from="1550929751011" duration="37549000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37545000" />
+    <option name="totallyTimeSpent" value="37549000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -569,21 +565,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/ObstacleDeath.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-          <folding>
-            <marker date="1551388696210" expanded="false" signature="6:78" ph="..." />
-            <marker date="1551388696210" expanded="true" signature="122:1042" ph="{...}" />
-            <marker date="1551388696210" expanded="true" signature="314:497" ph="{...}" />
-            <marker date="1551388696210" expanded="true" signature="516:602" ph="{...}" />
-            <marker date="1551388696210" expanded="true" signature="653:1040" ph="{...}" />
-            <marker date="1551388696210" expanded="true" signature="710:1034" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/OpenDoor.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -618,6 +599,21 @@
             <marker date="1551390322580" expanded="true" signature="413:434" ph="{...}" />
             <marker date="1551390322580" expanded="true" signature="487:636" ph="{...}" />
             <marker date="1551390322580" expanded="true" signature="544:630" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/ObstacleDeath.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+          <folding>
+            <marker date="1551395595499" expanded="false" signature="6:78" ph="..." />
+            <marker date="1551395595499" expanded="true" signature="122:1044" ph="{...}" />
+            <marker date="1551395595499" expanded="true" signature="314:499" ph="{...}" />
+            <marker date="1551395595499" expanded="true" signature="518:604" ph="{...}" />
+            <marker date="1551395595499" expanded="true" signature="655:1042" ph="{...}" />
+            <marker date="1551395595499" expanded="true" signature="712:1036" ph="{...}" />
           </folding>
         </state>
       </provider>
