@@ -50,6 +50,15 @@ public class Parallax : MonoBehaviour
             {
                 ScrollRight();
             }
+            /*if(Input.GetKeyDown(KeyCode.A))
+            {
+                ScrollLeft();
+            }
+
+            if(Input.GetKeyDown(KeyCode.D))
+            {
+                ScrollRight();
+            }*/
         }
     }
 
@@ -68,7 +77,7 @@ public class Parallax : MonoBehaviour
     private void ScrollRight()
     {
         int lastLeft = leftIndex;
-        layers[leftIndex].position = new Vector3(1 * layers[rightIndex].position.x - backgroundSize, layers[rightIndex].position.y, 0);
+        layers[leftIndex].position = new Vector3(1 * layers[rightIndex].position.x + backgroundSize, layers[rightIndex].position.y, 0);
         rightIndex = leftIndex;
         leftIndex++;
         if(leftIndex == layers.Length)
