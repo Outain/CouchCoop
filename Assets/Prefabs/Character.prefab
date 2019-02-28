@@ -464,6 +464,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Left: 97
   Right: 100
+  isJumping: 0
+  anchored: 0
 --- !u!1 &7836260922316960473
 GameObject:
   m_ObjectHideFlags: 0
