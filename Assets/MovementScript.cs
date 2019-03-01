@@ -72,6 +72,8 @@ public class MovementScript : MonoBehaviour {
          {
             animScript.isJumping = false;
          }
+
+         
     }
    
    

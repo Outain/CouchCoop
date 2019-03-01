@@ -9,7 +9,7 @@ public class AnimParameters : MonoBehaviour
     public KeyCode Right = KeyCode.D;
 
     Animator anim;
-    public bool isJumping;
+    public bool isJumping, isSwinging;
     bool moving;
     public bool anchored;
 
@@ -57,6 +57,15 @@ public class AnimParameters : MonoBehaviour
         else
         {
             anim.SetBool("Anchor", false);
+        }
+
+        if (isSwinging)
+        {
+            anim.SetBool("Swinging",true);
+        }
+        else
+        {
+            anim.SetBool("Swinging",false);
         }
     }
 

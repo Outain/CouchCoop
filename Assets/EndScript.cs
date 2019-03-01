@@ -8,6 +8,8 @@ public class EndScript : MonoBehaviour
     private bool turnedOn;
     public float fadeSpeed;
     public Image greyScreen;
+
+    public Text endText;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +23,10 @@ public class EndScript : MonoBehaviour
         {
             var tempColor = greyScreen.color;
             tempColor.a+= Time.deltaTime*fadeSpeed;
-            greyScreen.color = tempColor;  
+            greyScreen.color = tempColor;
+            var textColor = endText.color;
+            textColor.a += Time.deltaTime * fadeSpeed;
+            endText.color = textColor;
         }
     }
 

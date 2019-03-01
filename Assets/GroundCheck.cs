@@ -51,6 +51,7 @@ public class GroundCheck : MonoBehaviour
             {
                 ms.animScript.anchored = true;
                 msSwing.swinging = true;
+                msSwing.animScript.isSwinging = true;
                 ms.rb.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
                 //rend.material.color = Color.red;
             
@@ -60,6 +61,7 @@ public class GroundCheck : MonoBehaviour
            else //(Input.GetKeyUp(KeyCode.S))
             {
                 msSwing.swinging = false;
+                msSwing.animScript.isSwinging = false;
                 ms.rb.constraints = RigidbodyConstraints2D.FreezeRotation;
                 ms.animScript.anchored = false;
                 //rend.material.color = Color.white;
