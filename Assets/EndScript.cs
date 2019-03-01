@@ -10,6 +10,7 @@ public class EndScript : MonoBehaviour
     public Image greyScreen;
 
     public Text endText;
+    public AudioSource music;
 
     // Start is called before the first frame update
     void Start()
@@ -28,6 +29,7 @@ public class EndScript : MonoBehaviour
             var textColor = endText.color;
             textColor.a += Time.deltaTime * fadeSpeed;
             endText.color = textColor;
+            music.volume -= Time.deltaTime * fadeSpeed;
         }
     }
 
