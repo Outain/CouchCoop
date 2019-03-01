@@ -5,11 +5,12 @@ using UnityEngine.UI;
 
 public class EndScript : MonoBehaviour
 {
-    private bool turnedOn;
+    public bool turnedOn;
     public float fadeSpeed;
     public Image greyScreen;
 
     public Text endText;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +23,7 @@ public class EndScript : MonoBehaviour
         if (turnedOn)
         {
             var tempColor = greyScreen.color;
-            tempColor.a+= Time.deltaTime*fadeSpeed;
+            tempColor.a += Time.deltaTime * fadeSpeed;
             greyScreen.color = tempColor;
             var textColor = endText.color;
             textColor.a += Time.deltaTime * fadeSpeed;
@@ -35,6 +36,7 @@ public class EndScript : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             turnedOn = true;
+            GameController.finalTime = Mathf.RoundToInt(GameController.time);
         }
     }
 }
