@@ -1,6 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Android;
+//using UnityEditor.Android;
 using UnityEngine;
 
 public class OpenDoor : MonoBehaviour
