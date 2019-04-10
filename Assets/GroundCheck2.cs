@@ -48,7 +48,7 @@ public class GroundCheck2 : MonoBehaviour
 
             } 
             
-            if (Input.GetKey(KeyCode.DownArrow)||Input.GetKey(anchor))
+            if (Input.GetKey(KeyCode.DownArrow)||Input.GetKeyDown(anchor))
             {
                 msSwing.swinging = true;
                 msSwing.animScript.isSwinging = true;

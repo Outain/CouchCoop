@@ -40,7 +40,7 @@ public class GroundCheck : MonoBehaviour
         if (other.gameObject.CompareTag("ground")||other.gameObject.CompareTag("Player"))
         {
             ms.rb.velocity = new Vector3(ms.x * ms.speed, ms.rb.velocity.y, 0);
-            if (Input.GetKeyDown(KeyCode.Space)||Input.GetKey(jump)&&!jumping)
+            if (Input.GetKeyDown(KeyCode.Space)||Input.GetKeyDown(jump)&&!jumping)
             {
 
                 ms.Jumping();
