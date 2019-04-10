@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -12,6 +13,7 @@ public class AnimParameters : MonoBehaviour
     public bool isJumping, isSwinging;
     bool moving;
     public bool anchored;
+    public string playerAxis;
 
     void Start()
     {
@@ -22,7 +24,7 @@ public class AnimParameters : MonoBehaviour
     void Update()
     {
        
-        if (Input.GetKey(Left) || Input.GetKey(Right))
+        if (Input.GetKey(Left) || Input.GetKey(Right)||Input.GetAxis(playerAxis)!=0)
         {
             moving = true;
         }
@@ -32,11 +34,11 @@ public class AnimParameters : MonoBehaviour
         }
 
         anim.SetBool("Move", moving);
-        if (Input.GetKey(Left))
+        if (Input.GetKey(Left)||Input.GetAxis(playerAxis)<0)
         {
             transform.localScale = new Vector3(-1,1,1);
         }
-        if (Input.GetKey(Right))
+        if (Input.GetKey(Right)||Input.GetAxis(playerAxis)>0)
         {
             transform.localScale = new Vector3(1,1,1);
         }

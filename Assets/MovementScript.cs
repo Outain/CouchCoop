@@ -30,7 +30,7 @@ public class MovementScript : MonoBehaviour {
 //                rb.AddForce (Vector2.up * jump, ForceMode2D.Impulse);
 //            }
 //        }
-       if (Input.GetKey(KeyCode.A)&&!swinging || Input.GetKey(KeyCode.D)&&!swinging)
+       if (Input.GetKey(KeyCode.A)&&!swinging || Input.GetKey(KeyCode.D)&&!swinging||Input.GetAxis("Horizontal")!=0&&!swinging)
        {
            rb.velocity = new Vector3(x * speed, rb.velocity.y, 0);
        }
@@ -41,7 +41,7 @@ public class MovementScript : MonoBehaviour {
            rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y, 0);
        }
        
-       if (Input.GetKey(KeyCode.A)&&swinging || Input.GetKey(KeyCode.D)&&swinging)
+       if (Input.GetKey(KeyCode.A)&&swinging || Input.GetKey(KeyCode.D)&&swinging||Input.GetAxis("Horizontal")!=0&&swinging)
        {
            rb.AddForce(Vector2.right*x*airForce);
        }

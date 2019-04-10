@@ -12,6 +12,8 @@ public class GroundCheck : MonoBehaviour
     private float jumpCoolDownInitial;
 
     public bool jumping;
+
+    public KeyCode jump, anchor;
     // Start is called before the first frame update
     void Start()
     {
@@ -38,7 +40,7 @@ public class GroundCheck : MonoBehaviour
         if (other.gameObject.CompareTag("ground")||other.gameObject.CompareTag("Player"))
         {
             ms.rb.velocity = new Vector3(ms.x * ms.speed, ms.rb.velocity.y, 0);
-            if (Input.GetKeyDown(KeyCode.Space)&&!jumping)
+            if (Input.GetKeyDown(KeyCode.Space)||Input.GetKey(jump)&&!jumping)
             {
 
                 ms.Jumping();
@@ -47,7 +49,7 @@ public class GroundCheck : MonoBehaviour
 
             } 
             
-            if (Input.GetKey(KeyCode.S))
+            if (Input.GetKey(KeyCode.S)||Input.GetKey(anchor))
             {
                 ms.animScript.anchored = true;
                 msSwing.swinging = true;
