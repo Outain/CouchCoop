@@ -14818,12 +14818,12 @@ PrefabInstance:
     - target: {fileID: 1747601604288929529, guid: dc6480a4096760640867932d5a852878,
         type: 3}
       propertyPath: jump
-      value: 330
+      value: 350
       objectReference: {fileID: 0}
     - target: {fileID: 1747601604288929529, guid: dc6480a4096760640867932d5a852878,
         type: 3}
       propertyPath: anchor
-      value: 331
+      value: 351
       objectReference: {fileID: 0}
     - target: {fileID: 1747601604288929529, guid: dc6480a4096760640867932d5a852878,
         type: 3}
